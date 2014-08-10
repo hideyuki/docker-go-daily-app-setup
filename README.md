@@ -37,3 +37,4 @@ $ docker run -d --name daily -p 10022:22 hideyuki/go-daily-app-setting:0.1
 $ docker login    # if you need
 $ docker push hideyuki/go-daily-app-setting:0.1
 ```
+
