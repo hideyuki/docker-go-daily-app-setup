@@ -12,11 +12,23 @@ This repository connect the [Docker Hub repository](https://registry.hub.docker.
 $ docker build --rm -t hideyuki/go-daily-app-setting:0.1 ./
 ``` 
 
+With no-cache flag
+
+```
+$ docker build --rm --no-cache -t hideyuki/go-daily-app-setting:0.1 ./
+```
+
 # Run
 
 ```
 $ docker run -i -t --name daily -p 10022:22 hideyuki/go-daily-app-setting:0.1 /bin/bash
 root@289241d88367:/# 
+```
+
+Deamon
+
+```
+$ docker run -d --name daily -p 10022:22 hideyuki/go-daily-app-setting:0.1
 ```
 
 # Push to Docker Hub
