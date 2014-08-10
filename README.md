@@ -9,7 +9,7 @@ This repository connect the [Docker Hub repository](https://registry.hub.docker.
 # Build
 
 ```
-$ docker build -t hideyuki/go-daily-app-setting:0.1 ./
+$ docker build --rm -t hideyuki/go-daily-app-setting:0.1 ./
 ``` 
 
 # Run
